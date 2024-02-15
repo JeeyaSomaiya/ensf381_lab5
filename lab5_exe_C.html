@@ -223,9 +223,9 @@ Description : DOM Elements.
 				body.appendChild(newDiv);
 
 				// Task 5: Add placeholders to input elements based on their corresponding label IDs
-				document.getElementById("name").placeholder = "Type name here..";
-				document.getElementById("email").placeholder = "Type email here..";
-				document.getElementById("message").placeholder = "Type message here..";
+				document.getElementById("name").placeholder = "Name";
+				document.getElementById("email").placeholder = "Email";
+				document.getElementById("message").placeholder = "Message";
 
 				// Task 6: Set the src attribute of the image
 				document.getElementByTagName("img").src = "./images/example.svg";
@@ -250,7 +250,7 @@ Description : DOM Elements.
 				}
 
 				// Task 10: Add a red solid border to the footer
-				var footer = document.getElementsByTagName('footer')[0];
+				var footer = document.getElementsByTagName('footer');
 				footer.style.border = '2px solid red';
 			})
 		</script>
