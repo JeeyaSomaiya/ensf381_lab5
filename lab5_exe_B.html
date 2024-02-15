@@ -1,0 +1,46 @@
+<!--
+=========================================================
+Name        : lab5_exe_B.html
+Assignment  : Lab 5 Exercise B
+Author(s)   : Jeeya Somaiya, Kosy Onyejemezi
+Submission  : February 14, 2024
+Description : JavaScript Basics: Strings, Operators, and Variables
+=========================================================
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript String and Variable Exercise</title>
+</head>
+<body>
+    <script>
+        // 3.3.3 Declare Variables
+        let firstName = "Jeeya";
+        let lastName = "Somaiya";
+        let age = 19;
+
+        // 3.3.4 Concatenate Strings 
+        let fullName = firstName + " " + lastName;
+        console.log(fullName);
+
+        // 3.3.5 Calculate Birth Year
+        let currentYear = new Date().getFullYear();
+        let birthYear = currentYear - age;
+        console.log(birthYear);
+
+        // 3.3.6 String Manipulation
+        console.log(fullName.length);
+        console.log(fullName.toUpperCase());
+
+        // 3.3.7 Template Literals
+        console.log(`Hello, my name is ${fullName} and I am ${age} years old. I was born in ${birthYear}.`);
+
+        // 3.3.8 Bonus: Consitional Operator
+        let canVote = age > 18 ? true : false;
+        console.log(`I am eligible to vote: ${canVote}`);
+    </script>
+</body>
+</html>
